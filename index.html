@@ -83,17 +83,16 @@
   <div class="row">
 	<div class="col-8">
 	<h1 style="text-align:  left">Human Trafficking Hotline Web Chat</h1>
-	<p>Human Trafficking Hotline Web Chat</p>
 	<p>Note: Anti-Trafficking Hotline Advocates may ask sensitive questions. If you are not comfortable answering, you can decline. While we hold all conversations confidential, if you provide any details about someone under the age of 18 who is engaging in commercial sex or who is in danger, or if you or someone else is in immediate danger, we must report to law enforcement.</p>
-	<p>If chat is unavailable, please call us 24/7 at 1-888-373-7888.</p>
-	<p>Your safety is the most important concern right now. If your web browser or email activity might be monitored, or if you feel unsafe online, please consider your safety before engaging in digital communications with an Anti-Trafficking Hotline Advocate.</p>
+	<p><i>If chat is unavailable, please call us 24/7 at 1-888-373-7888.</i></p>
+	<p>Your safety is the most important concern right now.<b> If your web browser or email activity might be monitored, or if you feel unsafe online, please consider your safety before engaging in digital communications with an Anti-Trafficking Hotline Advocate.</b></p>
 	<p>Visit Stay Safe Online for additional safety planning information. Planning and testing these options ahead of time can help keep you safe. This list is not exhaustive and can be tailored to your unique needs.</p>
 	</div>
 	<div class="col-4">
 		<h2>Web Chat</h2>
 		<div id="conversation" style="width: 400px; height: 400px; border: 1px solid #ccc; background-color: #eee; padding: 4px; overflow: scroll"></div>
 		<form id="chatform" style="margin-top: 10px" onsubmit="return pushChat();">
-			<input type="text" id="wisdom" size="80" value="" placeholder="I need a hotel room">
+			<input type="text" id="wisdom" size="80" value="" placeholder="Report an incident">
 		</form>
 	</div>
 </div>
@@ -127,7 +126,7 @@
 				// send it to the Lex runtime
 				var params = {
 					botAlias: '$LATEST',
-					botName: 'BookTrip',
+					botName: 'Polaris',
 					inputText: wisdom,
 					userId: lexUserId,
 					sessionAttributes: sessionAttributes
